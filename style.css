@@ -15,6 +15,24 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.mobile_menu{
+  padding: 10px 0;
+  display: none;
+}
+
+.mobileNav{
+  display: block;
+}
+
+.mobile_menu p{
+  margin: 10px 0 ;
+  font-weight: 400;
+  color: #03045e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .logo {
   color: #03045e;
   font-size: 24px;
@@ -35,6 +53,18 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   line-height: 27px;
+}
+
+.hamburger{
+  width: 35px;
+  display: none;
+  justify-self: end;
+}
+
+.hamburger div{
+  background-color: black;
+  height: 5px;
+  margin: 2px;
 }
 
 .social_media_links {
@@ -101,4 +131,36 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #474306;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 34px 30px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .links{
+    display: none;
+  }
+
+  .social_media_links{
+    display: none;
+  }
+
+  .hamburger{
+    display: block
+  }
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .mobile_menu{
+    display: none;
+  }
 }
